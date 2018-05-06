@@ -1,12 +1,14 @@
 package br.com.api;
 
-import br.com.api.action.ExecuteBot;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+
+@SpringBootApplication
 public class App {
-
+	
 	public static void main(String[] args) {
-		ExecuteBot exec = new ExecuteBot();
-		exec.setUrl("http://www.google.com.br");
-		exec.execute();
+		SpringApplication.run(App.class, args);
+
 	}
 }
